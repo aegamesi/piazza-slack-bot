@@ -39,7 +39,7 @@ def make_attachment(post, network, followup, url):
     except:
         pass
     footer = time
-    if a_name is not None:
+    if a_name is not None and time is not None:
         footer = a_name + " - " + time
     msg = {
         "fallback": content if followup else title + ", " + url,
